@@ -5,9 +5,22 @@
 <div class="container">
     <br>
     <div class="row">
-        <? include 'login_create.php'; ?>
+    	<div class="col s10 offset-s1">
+			<nav>
+				<div class="nav-wrapper light-green lighten-2">
+					<a href="#" class="brand-logo center">
+						<img class="logo" src="sowyer-logo.png">
+					</a>
+				</div>
+			</nav>
+    	</div>
     </div>
+    <br>
     <div class="row">
+
+
+		
+        <? include 'login_create.php'; ?>
         <? include 'login_read.php'; ?>
     </div>
 </div>

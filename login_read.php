@@ -1,5 +1,5 @@
-<div class="col offset-s2 s8">
+<div class="col s7">
     <div class="collection" id="reader">
-        <? readRows() ?>
+        <? readRows(); ?>
     </div>
 </div>

@@ -7,17 +7,17 @@
         $query = "SELECT * FROM todos";
         $result = mysqli_query($connection, $query) OR die("ERROR: ".mysql_error());
         while($row = mysqli_fetch_assoc($result)) {
-            echo '<a href="#!" class="collection-item animated">';
+            echo '<div class="collection-item animated">';
                 echo $row['todo'];
-                echo '<strong style="float:right;">';
+                echo '<strong class="collection-item__date">';
                     echo $row['date'];
                 echo '</strong>';
                 echo "
                     <form class=\"deleteDown\" action=\"delete_handler.php\" method=\"POST\">
                         <input class=\"hide-input\" name=\"id\"  value=\"". $row['todo']. "\">
-                        <input onclick=\"deleteItem(event)\" class=\"btn btn-primary delete\" type=\"submit\" name=\"delete\" value=\"Done\">
+                        <button onclick=\"deleteItem(event)\" class=\"btn waves-effect waves-light delete deep-orange darken-1\" type=\"submit\" name=\"delete\">✕</button>
                     </form>";
-            echo '</a>';
+            echo '</div>';
         }
     }
 

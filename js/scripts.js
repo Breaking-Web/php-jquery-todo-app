@@ -2,13 +2,13 @@ function read() {
     var todo = $('#todo').val();
     var date = $('#date').val();
     var inHTML =
-    '<a href="#!" class="collection-item animated fadeInDown">' +
-        todo + '<strong style="float:right;">' + date + '</strong>' +
+    '<div class="collection-item animated fadeInDown">' +
+        todo + '<strong class="collection-item__date">' + date + '</strong>' +
         '<form class="deleteDown" action="delete_handler.php" method="POST"> ' +
             '<input class="hide-input" name="id"  value="' + todo + '">' +
-            '<input onclick="deleteItem(event)" class="btn btn-primary delete" type="submit" name="delete" value="Done">' +
+            '<button onclick="deleteItem(event)" class="btn delete deep-orange darken-1 waves-effect waves-light" type="submit" name="delete">✕</button>' +
         '</form>' +
-    '</a>';
+    '</div>';
     $('#reader').append(inHTML);
     $('.collection-item:last-child').addClass('animated fadeInDown');
 }
