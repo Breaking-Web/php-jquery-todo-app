@@ -9,13 +9,13 @@
 			<nav>
 				<div class="nav-wrapper light-green lighten-2">
 					<a href="#" class="brand-logo center">
-						<img class="logo" src="sowyer-logo.png">
+						<!-- <img class="logo" src="sowyer-logo.png"> -->
+						PHP Todo
 					</a>
 				</div>
 			</nav>
     	</div>
     </div>
-    <br>
     <div class="row">
 
 

@@ -37,19 +37,19 @@ function deleteItem(event) {
 
 function createTodo(event) {
     event.preventDefault();
-    $.ajax({
-        url: 'create_handler.php',
-        method: 'post',
-        data: $('#createForm').serialize(),
-        datatype: 'text',
-        success: function(strMessage) {
-            $('#result').text(strMessage);
-        },
-    });
-    read();
-    setTimeout(function() {
-        $('.form-control').val('');
-    });
+        $.ajax({
+            url: 'create_handler.php',
+            method: 'post',
+            data: $('#createForm').serialize(),
+            datatype: 'text',
+            success: function(strMessage) {
+                $('#result').text(strMessage);
+            },
+        });
+        read();
+        setTimeout(function() {
+            $('.form-control').val('');
+        });
 }
 
 $(document).ready(function() {
