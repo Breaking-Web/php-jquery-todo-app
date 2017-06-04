@@ -67,7 +67,6 @@
         }
         .logo {
             width: 150px;
-            filter: invert();
             padding-top: 18px;
         }
         .collection-item__date {

@@ -9,8 +9,7 @@
 			<nav>
 				<div class="nav-wrapper light-green lighten-2">
 					<a href="#" class="brand-logo center">
-						<!-- <img class="logo" src="sowyer-logo.png"> -->
-						PHP Todo
+						<img class="logo" src="sowyer-logo.png">
 					</a>
 				</div>
 			</nav>
