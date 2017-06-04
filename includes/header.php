@@ -38,12 +38,28 @@
         }
         .collection-item {
             position: relative;
+            transition: all .4s;
             overflow: hidden;
-            min-height: 100px;
-            background: #f2f2f2 !important;
+            min-height: 115px;
+            background: #f7f7f7 !important;
             padding-bottom: 20px !important;
             box-sizing: border-box;
             padding-right: 110px !important;
+            padding-left: 40px !important;
+        }
+        .collection-item.done-it {
+            opacity: .2;
+        }   
+  
+        .collection-item.done-it .doneForm {
+            display: none;
+        }
+        .collection-item h3 {
+            position: absolute;
+            left: 20px;
+            top: -7px;
+            font-size: 14px;
+            font-weight: bold;
         }
         .picker--opened .picker__frame {
             top: 10px;
@@ -61,15 +77,20 @@
             font-weight: bolder;
         }
         body {
-            background: #f9f9f9;
             font-family: "Open Sans";
         }
         .delete {
             padding: 0 13px;
-            float: right;
             position: absolute;
             bottom: 15px;
             right: 20px;
+        }        
+        .done {
+            padding: 0 13px;
+            height: 35px;
+            position: absolute;
+            bottom: 16px;
+            right: 70px;
         }
         a:active,
         a:focus,
@@ -79,6 +100,5 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
