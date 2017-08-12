@@ -3,7 +3,8 @@
     // Get off of the "krackozyabri"
     mysqli_query($connection, "SET NAMES utf8");
 
-    if(!$connection) {
+    if (!$connection) 
+    {
         die('Database connection failed');
     }
 
